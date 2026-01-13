@@ -40,5 +40,3 @@ print(not(x==5))
 
 
 #Done for Day-1
-# enisenvijsnvk
-# vkjsrivj
