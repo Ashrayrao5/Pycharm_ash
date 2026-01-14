@@ -142,14 +142,14 @@
 # print(f"Welcome, {username}!")
 
 
-# Mini Project: Electricity Bill Calculator
-units = int(input("Enter the units consumed (must be >= 0): "))
-
-# First 100 units at ₹5
-if units <= 100:
-    bill = units * 5
-else:
-    # First 100 units at ₹5, rest at ₹7
-    bill = (100 * 5) + ((units - 100) * 7)
-
-print(f"Total electricity bill: ₹{bill}")
+# # Mini Project: Electricity Bill Calculator
+# units = int(input("Enter the units consumed (must be >= 0): "))
+#
+# # First 100 units at ₹5
+# if units <= 100:
+#     bill = units * 5
+# else:
+#     # First 100 units at ₹5, rest at ₹7
+#     bill = (100 * 5) + ((units - 100) * 7)
+#
+# print(f"Total electricity bill: ₹{bill}")
