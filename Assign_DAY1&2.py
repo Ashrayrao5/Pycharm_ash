@@ -82,3 +82,74 @@
 # for quantity in range(1, 11):
 #     total = price * quantity
 #     print(f"{quantity} items: ${total:.2f}")
+
+# # While Loop Practice
+# # Sum of Numbers
+# num = 1
+# sum = 0
+#
+# while num <= 50:
+#     sum = sum + num
+#     num += 1
+# print("The SUM of Numbers from 1 to 50 using While loop:", sum)
+
+
+# # Password Checker
+# correct_password = "Python123"
+# user_input = ""
+#
+# while user_input != correct_password:
+#     user_input = input("Enter password: ")
+#
+# print("Password correct! Access granted.")
+
+
+# # Number Guessing Game
+# secret_number = 7
+# guess = None
+# attempts = 0
+#
+# while guess != secret_number:
+#     guess = int(input("Guess the secret number (1-10): "))
+#     attempts += 1
+#
+# print(f"Correct! You guessed it in {attempts} attempt(s).")
+
+
+
+# # Saving Money Tracker
+# savings = 0
+# days = 0
+#
+# while savings < 1000:
+#     savings += 50   # Save ₹50 every day
+#     days += 1
+#
+# print(f"Total days required to save ₹1000: {days}")
+
+#
+# # Login System
+# correct_username = "user123"
+# correct_password = "pass123"
+#
+# username = ""
+# password = ""
+#
+# while username != correct_username or password != correct_password:
+#     username = input("Enter username: ")
+#     password = input("Enter password: ")
+#
+# print(f"Welcome, {username}!")
+
+
+# Mini Project: Electricity Bill Calculator
+units = int(input("Enter the units consumed (must be >= 0): "))
+
+# First 100 units at ₹5
+if units <= 100:
+    bill = units * 5
+else:
+    # First 100 units at ₹5, rest at ₹7
+    bill = (100 * 5) + ((units - 100) * 7)
+
+print(f"Total electricity bill: ₹{bill}")
