@@ -13,15 +13,15 @@
 # print(person)
 
 
-person_1 = {"name" :"John", "age" : 20, "city":'New York'}
-print(person_1)
-
-person_2 = {}
-person_2["name"] = "Sarah"
-person_2["age"] = 24
-person_2["city"] = "Boston"
-person_2["email"] ="abc.email.com"
-print(person_2)
+# person_1 = {"name" :"John", "age" : 20, "city":'New York'}
+# print(person_1)
+#
+# person_2 = {}
+# person_2["name"] = "Sarah"
+# person_2["age"] = 24
+# person_2["city"] = "Boston"
+# person_2["email"] ="abc.email.com"
+# print(person_2)
 
 # Nested Dictionaries
 
@@ -34,31 +34,31 @@ print(person_2)
 # delete
 
 # Do any research on the API for data Analytics purposes
-
-
-student = {
-    "name": "John",
-    "marks": {
-        "math": 85,
-        "science": 90,
-        "english": 88
-    }
-}
-
-
-print(student["name"])
-print(student["marks"]["math"])
-
-
-student["marks"]["math"] = 95
-print(student["marks"])
-
-
-for subject, score in student["marks"].items():
-    print(subject, ":", score)
-
-
-# 6-lvl Nested Dict
+#
+#
+# student = {
+#     "name": "John",
+#     "marks": {
+#         "math": 85,
+#         "science": 90,
+#         "english": 88
+#     }
+# }
+#
+# print(student.items())
+# print(student["marks"]["math"])
+# print(student["marks"].keys())
+# print(student["marks"].values())
+#
+# student["marks"]["math"] = 95
+# print(student["marks"])
+#
+#
+# for subject, score in student["marks"].items():
+#     print(subject, ":", score)
+#
+#
+# # 6-lvl Nested Dict
 
 company_data = {
     "company": {
@@ -100,9 +100,15 @@ company_data["company"]["departments"]["IT"]["teams"]["Data"] \
 ["projects"]["SalesAnalytics"]["metrics"]["2026-01-10"]["orders"] = 1000
 
 
+print(company_data["company"]["departments"]["IT"]["teams"]["Data"] \
+["projects"]["SalesAnalytics"]["metrics"]["2026-01-10"]["orders"])
+
 # Adding a New Metric
 company_data["company"]["departments"]["IT"]["teams"]["Data"] \
 ["projects"]["SalesAnalytics"]["metrics"]["2026-01-11"] = {
     "revenue": 130000,
     "orders": 980
 }
+
+print(company_data["company"]["departments"]["IT"]["teams"]["Data"] \
+["projects"]["SalesAnalytics"]["metrics"]["2026-01-10"].items())
