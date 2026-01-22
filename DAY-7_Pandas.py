@@ -28,7 +28,7 @@ import pandas as pd
 
 
 
-df = pd.read_json("C:\\Users\\ashri\\Downloads\\students.json")
+# df = pd.read_json("C:\\Users\\ashri\\Downloads\\students.json")
 
 # print(df.head(10))
 # print(df.shape)
@@ -61,6 +61,6 @@ df = pd.read_json("C:\\Users\\ashri\\Downloads\\students.json")
 # print(df.iloc[9])
 # print(df.isnull().sum())
 # df.fillna(df.mean(), inplace=True)
-df.fillna(df.mean(numeric_only=True), inplace=True)
-print(df)
-df.to_json("C:\\Users\\ashri\\Downloads\\students.json.gz")
+# df.fillna(df.mean(numeric_only=True), inplace=True)
+# print(df)
+# df.to_json("C:\\Users\\ashri\\Downloads\\students.json.gz")
